@@ -51,8 +51,10 @@ This is a simple note-taking web application where users can create, edit, and d
 ```plaintext
 /project-root
 │── index.html         # Main HTML file
-│── styles.css         # CSS for styling (assumed present)
-│── script.js          # JavaScript logic (this file)
+│── css
+│   └── styles.css     # CSS for styling
+│── js
+│   └── styles.css     # JavaScript logic (this file)
 │── README.md          # This documentation
 ```
 
@@ -72,4 +74,4 @@ This is a simple note-taking web application where users can create, edit, and d
 
 ---
 
-Enjoy using the Note-Taking App! 🚀
+Enjoy using the Note-Taking App! 
