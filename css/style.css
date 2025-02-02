@@ -150,7 +150,7 @@ body {
 
   .notes,
   .title {
-    width: 100%;
+    max-width: 90%;
   }
 
   .text-area {
