@@ -70,6 +70,8 @@ function noteClick(e) {
       }
     });
   }
+
+  checkUI();
 }
 
 function addToDom(titleTxt, noteTxt) {
@@ -172,10 +174,15 @@ function getfromStorage() {
 function checkUI() {
   let itemsFromStorage = getfromStorage();
 
-  if (localStorage.getItem("note") === null) {
-    document.querySelector(".link-area").style.display = "none";
+  if (
+    localStorage.getItem("note") === null ||
+    localStorage.getItem("note") === "[]"
+  ) {
+    document.querySelector(".link-area").style.visibility = "hidden";
+    document.querySelector(".link-area").style.opacity = 0;
   } else {
-    document.querySelector(".link-area").style.display = "block";
+    document.querySelector(".link-area").style.visibility = "visible";
+    document.querySelector(".link-area").style.opacity = 1;
   }
 }
 

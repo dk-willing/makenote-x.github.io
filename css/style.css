@@ -35,6 +35,10 @@ body {
   cursor: pointer;
 }
 
+.link-area {
+  transition: all 0.3s;
+}
+
 .details {
   cursor: pointer;
   transition: all 0.3s;
@@ -57,6 +61,8 @@ body {
   flex-direction: column;
   padding: 3rem;
   overflow: hidden;
+
+  padding: 2rem;
 }
 
 .link-area {
