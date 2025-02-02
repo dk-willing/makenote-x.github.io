@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+}
+
+.primary-heading {
+  color: #fff;
+  padding: 1rem;
+  font-size: 2rem;
+  border-bottom: 1px solid #fff;
+  transition: all 0.3s;
+
+  margin-bottom: 2rem;
+}
+
+.note-list {
+  list-style: number;
+}
+
+.heading {
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 1rem;
+
+  cursor: pointer;
+}
+
+.details {
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-bottom: 2rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 2rem;
+  max-height: 100vh;
+  overflow: hidden;
+  /* background-color: #848fff; */
+}
+
+.text-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 3rem;
+  overflow: hidden;
+}
+
+.link-area {
+  padding: 4rem;
+  background-color: cadetblue;
+  max-height: 100vh;
+
+  overflow-y: auto;
+}
+
+.title {
+  padding: 2rem;
+  width: 60rem;
+  border-radius: 0.8rem;
+  outline: none;
+  border: none;
+  border: 1px solid #333;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.note {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.icon {
+  width: 2.4rem;
+  height: 2.4rem;
+}
+
+.remove {
+  padding: 1.4rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s;
+}
+
+.remove:hover {
+  /* background-color: #333; */
+  color: #f25252;
+}
+
+.notes {
+  padding: 2rem;
+  border: none;
+  border-radius: 0.8rem;
+  width: 60rem;
+  height: 40rem;
+  outline: none;
+  margin-bottom: 3rem;
+  border: 1px solid #333;
+}
+
+.save-btn {
+  display: block;
+  padding: 1.5rem;
+  width: 20rem;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 0.8rem;
+  background-color: #848fff;
+  color: #fff;
+  font-weight: 600;
+  box-shadow: 0 0.4rem 1.2rem rgba(0, 0, 0, 0.2);
+}
+
+@media (max-width: 52.5em) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .notes,
+  .title {
+    width: 100%;
+  }
+
+  .text-area {
+    order: -1;
+  }
+}
