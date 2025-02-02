@@ -190,8 +190,8 @@ function checkUI() {
 function init() {
   primaryBtn.addEventListener("click", addNote);
   noteList.addEventListener("click", noteClick);
-  checkUI();
   displayFromStorage();
+  checkUI();
 }
 
 init();
